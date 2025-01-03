@@ -7,6 +7,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="container">
+      <h1>Expense Tracker</h1>
+      <div class="heading2">
+        <h2>Add a new item</h2>
+      </div>
+      <form>
+        <div class="name">
+          <label for="expense-name">Expense Location</label>
+          <input
+            type="text"
+            id="expense-name"
+            placeholder="Where was the expense made?"
+          />
+        </div>
+        <div class="date">
+          <label for="date-of">Date</label>
+          <input type="date" id="date-of" />
+        </div>
+        <div class="amount">
+          <label for="amount">Amount</label>
+          <input type="number" id="amount" placeholder="Enter Amount" />
+        </div>
+        <button type="button" class="button">Add Expenses</button>
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Rows go here-->
+        </tbody>
+      </table>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
